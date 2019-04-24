@@ -1,12 +1,15 @@
 /* eslint-disable react/prefer-stateless-function */
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import { CssBaseline } from '@material-ui/core';
+import Navbar from './components/navbar';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <h1>React Basic Project with Eslint and Prettier.</h1>
-      </div>
+      <Fragment>
+        <CssBaseline />
+        <Navbar />
+      </Fragment>
     );
   }
 }
